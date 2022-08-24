@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+:root{
+    --font1:Verdana, Geneva, Tohama, sans-serif;
+    --font2:'Passion One', cursive;
+    --font3:'Sriracha', cursive;
+    
+}
+
+pre{
+    white-space: pre-line;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 5vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+.normal{
+    background-color: white;
+}
+
+.imagem{
+    background-color: aquamarine;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
+    background-attachment: fixed;
+
+}
+
+section{
+    /*Colocar 10% das vh nas section em cima e em baixo*/
+    /*Acho que por isso ela foi declarada no inicio a 100vh*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+    font-size: 3vw;
+}
+
+section > pre{
+    font-family: var(--font3);
+
+}
+
+section.imagem > pre{
+    /*Ajusta a caixa para se adaptar ao conteúdo*/
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img_01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+  
+}
+
+section#img_02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
