@@ -37,6 +37,7 @@ header > h1{
 
 header > p{
     padding-bottom: 50px;
+    font-family: var(--font1);
 }
 
 header a, footer a{
@@ -97,6 +98,7 @@ section#img_02{
 }
 
 footer{
+    font-family: var(--font1);
     background-color: black;
     color: white;
     text-align: center;
